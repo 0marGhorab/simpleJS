@@ -1,0 +1,43 @@
+:root{
+    --main-color-rgb: 173, 216, 230;
+    --main-color: #ADD8E6;
+    --secondar-color-rgb: 0, 0, 139;
+    --secondar-color: #00008B;
+}
+
+.container{
+    width: 75%;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+#main-header{
+    background-image: linear-gradient(rgba(var(--main-color-rgb), 0.6), rgba(var(--main-color-rgb), 0.6)) , url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--secondar-color);
+    font-family: "Fuzzy Bubbles", sans-serif;
+
+    
+}
+
+.faded {
+    animation-name: faded;
+    animation-duration: 0.5s;
+    animation-direction: normal;
+}
+
+@keyframes faded {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

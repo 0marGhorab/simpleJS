@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header
+      id="main-header"
+      class="vh-100 d-flex justify-content-center align-items-center text-center"
+    >
+      <div class="container">
+        <h1 class="mb-3">Generate your Quote</h1>
+        <h2 class="mb-3">"Quote of the day"</h2>
+        <button class="btn btn-info mb-4" onclick="showQuote()">
+          Generate
+        </button>
+        <div class="w-75 mx-auto border border-5 rounded-3 border-info p-4">
+          <h3
+            id="generated"
+            class=""
+          ></h3>
+        </div>
+      </div>
+    </header>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
